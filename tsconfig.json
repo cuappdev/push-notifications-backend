@@ -6,7 +6,6 @@
     "outDir": "build",
     "strict": true,
     "strictNullChecks": false,
-    // "noUnusedLocals": true,
     "resolveJsonModule": true,
     "moduleResolution": "node",
     "esModuleInterop": true,

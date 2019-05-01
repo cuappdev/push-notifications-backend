@@ -7,7 +7,7 @@ class HelloWorldRouter extends ApplicationRouter<any> {
     super('GET');
   }
 
-  getPath(): string {
+  getPath() {
     return '/';
   }
 
