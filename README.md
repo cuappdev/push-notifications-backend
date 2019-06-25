@@ -18,17 +18,19 @@ psql push-notifications
 ````
 
 ### Required variables & files:
-Create a .env file in the repository by running the following and setting the correct values:
+Create a .envrc file in the repository by running the following and setting the correct values:
+
 ```bash
-cp env.template .env
+cp envrc.template .envrc
 ```
 
 You will also need a `.p8` file which is tied to the Apple Developer account that owns the apps which will be receiving push notifications. Contact an AppDev member to get the `.p8` file tied to our account.
 
-Using [`autoenv`](https://github.com/kennethreitz/autoenv) is recommended. Otherwise, you need source it using `source .env`.
+Using [`direnv`](https://direnv.net) is recommended. Otherwise, you need to source it using `source .envrc`.
 
 ### To run:
 Make sure you have [`Node.js`](https://nodejs.org/en/download/) installed, and then run
+
 ````bash
 npm install (first time)
 npm run start:dev
